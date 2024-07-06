@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FullCalendar Example</title>
+  <!-- Sertakan FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+  <!-- Sertakan FullCalendar JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+  <!-- Sertakan FullCalendar Locale (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales-all.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <a href="main.html">kembali</a>
+  <div id="calendar"></div>
+
+  <script>
+    // Fungsi untuk mengambil data dari localStorage
+    function getAgendaData() {
+      let data = localStorage.getItem('nisa-uas');
+      if (data) {
+        console.log(data);
+        // Mengubah data string menjadi array
+        let dataArray = JSON.parse(data);
+
+        // Hapus elemen HTML yang tidak diperlukan dan kembalikan array acara
+        let events = dataArray.map(eventStr => {
+          let match = eventStr.match(/(\d{4}-\d{2}-\d{2} \d{2}:\d{2}) - ([^\n]+)/);
+          if (match) {
+            let datetime = match[1];
+            let title = match[2];
+            let [date, time] = datetime.split(' ');
+            return {
+              title: title.trim(),
+              start: date + 'T' + time
+            };
+          }
+          return null;
+        }).filter(event => event !== null);
+
+        return events;
+      }
+      return [];
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'id', // Mengatur lokal menjadi Bahasa Indonesia
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        events: getAgendaData() // Mengambil data acara dari localStorage
+      });
+
+      calendar.render();
+    });
+  </script>
+</body>
+</html>

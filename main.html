@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do List App</title>
+    <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="styles.css">
+      <link href='https://fullcalendar.io/releases/core/4.0.0/main.min.css' rel='stylesheet' />
+    <link href='https://fullcalendar.io/releases/daygrid/4.0.0/main.min.css' rel='stylesheet' />
+    <link href='https://fullcalendar.io/releases/timegrid/4.0.0/main.min.css' rel='stylesheet' />
+    <script src='https://fullcalendar.io/releases/core/4.0.0/main.min.js'></script>
+    <script src='https://fullcalendar.io/releases/interaction/4.0.0/interaction.min.js'></script>
+    <script src='https://fullcalendar.io/releases/daygrid/4.0.0/main.min.js'></script>
+    <script src='https://fullcalendar.io/releases/timegrid/4.0.0/main.min.js'></script>
+</head>
+</head>
+
+</head>
+<body>
+    <div class="container">
+   
+        <h1>Do List App</h1>
+        <form id="agendaForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity" name="activity" required>
+            <button type="submit" id="addButton">Add Agenda</button>
+            <button type="button" id="updateButton" style="display:none;">Update Agenda</button>
+        </form>
+        <h2>Your Agendas</h2>
+        <a href="calender.html">Detail Kalendar</a>
+        <ul id="agendaList"></ul>
+ 
+
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid'],
+                defaultView: 'timeGridWeek',
+                editable: true,
+                events: [
+                    // Contoh data acara
+                    { title: 'Meeting', start: '2024-06-25T10:30:00', end: '2024-06-25T12:30:00' }
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>
