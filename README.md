@@ -59,13 +59,13 @@ adalah standar desain arsitektur yang sering digunakan dalam pengembangan layana
      setInterval(fetchPrayerTimes, 60000); // Update every minute
 
 ## 6. Tampilan Layar Prayer Time
-###![prayer time](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/eb2f1c06-2589-49e7-ae97-9b550539d1aa)
+![prayer time](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/eb2f1c06-2589-49e7-ae97-9b550539d1aa)
 
 ## 7. Tampilan Layar To Do List (Agenda's)
-###![tampilan to do list](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/40e77833-c7cf-496a-91e6-a297bfde60ec)
+![tampilan to do list](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/40e77833-c7cf-496a-91e6-a297bfde60ec)
 
 ## 8. Tampilan To Do List (Agenda's) fitur CRUD
-###![tampilan crud](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/454deeb0-e6b8-4285-b948-389f93a68164)
+![tampilan crud](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/454deeb0-e6b8-4285-b948-389f93a68164)
 
 Berikut tampilan mobile to do list yang mempunyai fitur CRUD (Create, Read, Update, dan Delete)
 
