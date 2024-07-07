@@ -35,7 +35,31 @@ Menghapus Item Agenda
 Klik tombol "Hapus" di sebelah item agenda.
 Item dihapus dari daftar.
 
-## 5. Kesimpulan
+## 5. RESTful API (Representational State Transfer) adalah standar desain arsitektur yang sering digunakan dalam pengembangan layanan web. Dalam konteks aplikasi jadwal sholat, RESTful API memungkinkan aplikasi untuk mengakses dan memanipulasi data melalui permintaan HTTP.
+
+### Cara Kerja RESTful API dalam Aplikasi Jadwal Sholat:
+
+1. *Endpoint API*:
+   - URL yang digunakan untuk mengakses data jadwal sholat adalah https://muslimsalat.com/jakarta.json.
+   - Endpoint ini akan memberikan respons dalam format JSON yang berisi informasi tentang jadwal sholat di Jakarta.
+
+2. *HTTP Method*:
+   - GET: Digunakan untuk mengambil data dari server. Dalam contoh ini, kita menggunakan GET untuk mengambil jadwal sholat.
+
+3. *Respons JSON*:
+   - Respons dari API https://muslimsalat.com/jakarta.json berisi informasi jadwal sholat dalam format JSON. Berikut adalah struktur data yang direspons:
+     
+4. *Parsing Respons JSON*
+   - Setelah menerima respons JSON, data diparsing (diurai) untuk menampilkan informasi yang dibutuhkan. Berikut adalah bagian kode JavaScript yang bertanggung jawab untuk memparsing dan menampilkan data
+
+6. *Periodic Update*:
+   - Fungsi setInterval digunakan untuk memperbarui data setiap menit:
+     javascript
+     setInterval(fetchPrayerTimes, 60000); // Update every minute
+     
+Dengan penjelasan di atas, kita bisa memahami bagaimana RESTful API digunakan untuk mengambil dan menampilkan jadwal sholat secara dinamis. Kode ini memungkinkan aplikasi untuk selalu menampilkan informasi waktu sholat yang terkini sesuai dengan data yang diambil dari API
+
+## 6. Kesimpulan
 Aplikasi Agenda menyediakan cara sederhana namun efektif untuk mengelola aktivitas sehari-hari. Ini menunjukkan penggunaan teknologi pengembangan web dasar untuk menciptakan pengalaman pengguna yang interaktif.
 Aplikasi ini dapat diperluas lebih lanjut dengan fitur tambahan seperti persistensi data menggunakan local Storage, penyortiran item agenda, dan pemberitahuan untuk kegiatan mendatang.
 
