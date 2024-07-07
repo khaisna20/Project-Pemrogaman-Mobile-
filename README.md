@@ -1,4 +1,4 @@
-# Aplikasi Mobile To Do List (Planner)
+# Aplikasi Mobile Prayer Time & To Do List (Agenda's)
 Tujuan: Aplikasi Agenda dirancang untuk membantu pengguna melacak aktivitas mereka dengan mudah. Ini memungkinkan pengguna untuk menambah, mengedit, dan menghapus item agenda yang mencakup tanggal, waktu, dan deskripsi aktivitas.
 Teknologi yang Digunakan: Aplikasi ini dibangun menggunakan HTML untuk struktur, CSS untuk styling, dan JavaScript untuk interaktivitas.
 
