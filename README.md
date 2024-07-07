@@ -35,7 +35,8 @@ Menghapus Item Agenda
 Klik tombol "Hapus" di sebelah item agenda.
 Item dihapus dari daftar.
 
-## 5. RESTful API (Representational State Transfer) adalah standar desain arsitektur yang sering digunakan dalam pengembangan layanan web. Dalam konteks aplikasi jadwal sholat, RESTful API memungkinkan aplikasi untuk mengakses dan memanipulasi data melalui permintaan HTTP.
+## 5. RESTful API (Representational State Transfer) 
+adalah standar desain arsitektur yang sering digunakan dalam pengembangan layanan web. Dalam konteks aplikasi jadwal sholat, RESTful API memungkinkan aplikasi untuk mengakses dan memanipulasi data melalui permintaan HTTP.
 
 ### Cara Kerja RESTful API dalam Aplikasi Jadwal Sholat:
 
@@ -56,10 +57,19 @@ Item dihapus dari daftar.
    - Fungsi setInterval digunakan untuk memperbarui data setiap menit:
      javascript
      setInterval(fetchPrayerTimes, 60000); // Update every minute
-     
-Dengan penjelasan di atas, kita bisa memahami bagaimana RESTful API digunakan untuk mengambil dan menampilkan jadwal sholat secara dinamis. Kode ini memungkinkan aplikasi untuk selalu menampilkan informasi waktu sholat yang terkini sesuai dengan data yang diambil dari API
 
-## 6. Kesimpulan
+## 6. Tampilan Layar Prayer Time
+![prayer time](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/eb2f1c06-2589-49e7-ae97-9b550539d1aa)
+
+## 7. Tampilan Layar To Do List (Agenda's)
+![tampilan to do list](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/40e77833-c7cf-496a-91e6-a297bfde60ec)
+
+## 8. Tampilan To Do List (Agenda's) fitur CRUD
+![tampilan crud](https://github.com/khaisna20/Project-Pemrogaman-Mobile-/assets/169865008/454deeb0-e6b8-4285-b948-389f93a68164)
+Berikut tampilan mobile to do list yang mempunyai fitur CRUD (Create, Read, Update, dan Delete)
+
+## 9. Kesimpulan
+Dengan penjelasan di atas, kita bisa memahami bagaimana RESTful API digunakan untuk mengambil dan menampilkan jadwal sholat secara dinamis. Kode ini memungkinkan aplikasi untuk selalu menampilkan informasi waktu sholat yang terkini sesuai dengan data yang diambil dari API
 Aplikasi Agenda menyediakan cara sederhana namun efektif untuk mengelola aktivitas sehari-hari. Ini menunjukkan penggunaan teknologi pengembangan web dasar untuk menciptakan pengalaman pengguna yang interaktif.
 Aplikasi ini dapat diperluas lebih lanjut dengan fitur tambahan seperti persistensi data menggunakan local Storage, penyortiran item agenda, dan pemberitahuan untuk kegiatan mendatang.
 
